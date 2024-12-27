@@ -6,7 +6,6 @@ params [];
 if (!hasInterface) exitWith {};
 
 // Clear ACE notifications
-
 ["", 999] call ace_common_fnc_displayTextStructured;
 
 

@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2629;
+		nextID=2651;
 	};
 	class Camera
 	{
-		pos[]={7653.3491,23.317755,7500.124};
-		dir[]={-0.0048206267,-0.52290308,-0.85237855};
-		up[]={-0.0029572309,0.85239214,-0.52289474};
-		aside[]={-0.99998403,2.3283064e-10,0.0056554093};
+		pos[]={7648.4575,27.288225,7483.5166};
+		dir[]={-0.003483067,-0.97518188,-0.22143489};
+		up[]={-0.015338067,0.2212169,-0.97510308};
+		aside[]={-0.9998883,9.6745134e-07,0.01572853};
 	};
 };
 binarizationWanted=0;
@@ -55224,8 +55224,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7651.1851,5,7476.2598};
-						angles[]={0.017767452,0.020402899,0.011222467};
+						position[]={7649.0708,5,7476.0674};
+						angles[]={-0,0.020402899,0};
 					};
 					side="Empty";
 					flags=4;
@@ -55270,12 +55270,12 @@ class Mission
 				class Item10
 				{
 					dataType="Trigger";
-					position[]={7656.6235,5,7476.9907};
+					position[]={7656.0005,5,7475.998};
 					class Attributes
 					{
 						name="triggerArsenal";
-						sizeA=1;
-						sizeB=1;
+						sizeA=1.9990234;
+						sizeB=1.9924316;
 						sizeC=2;
 						isRectangle=1;
 					};
@@ -55287,7 +55287,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={7654.3066,5,7476.1973};
+						position[]={7652.1924,5,7476.0049};
 					};
 					id=205;
 					type="ModuleCurator_F";
@@ -55353,7 +55353,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={7653.8647,5,7476.1992};
+						position[]={7651.7505,5,7476.0068};
 					};
 					id=228;
 					type="ModuleCurator_F";
@@ -55465,7 +55465,7 @@ class Mission
 					dataType="Comment";
 					class PositionInfo
 					{
-						position[]={7651.1826,5,7476.0938};
+						position[]={7649.0684,5,7475.9014};
 					};
 					title="Respawn Object (will be invisible in mission)";
 					id=985;
@@ -70326,14 +70326,14 @@ class Mission
 										};
 										class Attribute1
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="asczHead_neumann_A3";
+													singleType="BOOL";
+													value=0;
 												};
 											};
 										};
@@ -70365,14 +70365,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=0;
+													singleType="STRING";
+													value="asczHead_neumann_A3";
 												};
 											};
 										};

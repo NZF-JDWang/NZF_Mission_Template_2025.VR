@@ -3,12 +3,10 @@ if (nzf_template_Groups) then {
     ["InitializePlayer", [player,true]] call BIS_fnc_dynamicGroups; 
 };
 //*************************************************************************************
-
 // Now make sure if rations are on they don't get hungry or thirsty
 if (acex_field_rations_enabled) then {
     [] spawn NZF_fnc_manageGMNeeds;   
 };
-
 //*************************************************************************************
 //Setup ACE Spectator
 [allPlayers, [player, missionNamespace getVariable ["nzf_gameMasters", []]]] call ace_spectator_fnc_updateUnits;
