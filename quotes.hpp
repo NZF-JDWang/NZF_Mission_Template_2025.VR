@@ -1,0 +1,28 @@
+_nzf_quotes = [
+
+"It is fatal to enter any war without the will to win it. – Douglas MacArthur",
+"In war, there is no substitute for victory. – Douglas MacArthur",
+"Only the dead have seen the end of war - George Santayana",
+"Victory is reserved for those who are willing to pay its price – Sun Tzu",
+"Never interrupt your enemy when he is making a mistake. - Napoleon Bonaparte",
+"Wars may be fought with weapons, but they are won by men. - George S. Patton",
+"Courage is fear holding on a minute longer. - George S. Patton",
+"The object of war is not to die for your country but to make the other bastard die for his - George S. Patton",
+"We sleep safely at night because rough men stand ready to visit violence on those who would harm us. - G. Orwell",
+"Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt. - Sun Tzu",
+"A good plan violently executed now is better than a perfect plan executed next week. - George S. Patton",
+"If you find yourself in a fair fight, you didn’t plan your mission properly. – David Hackworth",
+"Be polite, be professional, but have a plan to kill everybody you meet. – General James 'Mad Dog' Mattis",
+"It's God's job to judge the terrorists. It's our mission to arrange the meeting. - General Norman Schwarzkopf",
+"I am the punishment of God...If you had not committed great sins, God would not have sent a punishment like me upon you. – Genghis Khan",
+"We will either find a way or make one. – Hannibal",
+"If you want peace, prepare for war. – Vegetius",
+"We don’t rise to the level of our expectations; we fall to the level of our training. – Archilochus",
+"Victory belongs to the most persevering. – Napoleon Bonaparte",
+"In the absence of orders, go find something and kill it. – Field Marshal Erwin Rommel",
+"The harder the conflict, the greater the triumph. – George Washington",
+"It’s not the size of the dog in the fight, it’s the size of the fight in the dog. – Mark Twain",
+"The more you sweat in training, the less you bleed in battle. – Military Maxim",
+"In the midst of chaos, there is also opportunity. - Sun Tzu",
+"He who wishes to fight must first count the cost. – Sun Tzu"
+];

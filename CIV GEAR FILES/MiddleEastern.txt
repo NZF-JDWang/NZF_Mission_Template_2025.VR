@@ -1,0 +1,17 @@
+Middle East
+
+Class - UK3CB_TKC_C_CIV
+
+Backpacks - ["pmc_lbt1476_cb","pmc_lbt1476_gry","pmc_lbt1476_rgr","UK3CB_B_Alice_K","B_DuffleBag_Black_NoLogo_RF","B_DuffleBag_Sand_NoLogo_RF","B_DuffleBag_Olive_NoLogo_RF","B_CivilianBackpack_01_Everyday_Astra_F","B_CivilianBackpack_01_Everyday_Black_F","B_CivilianBackpack_01_Everyday_Vrana_F","UK3CB_CW_US_B_LATE_B_RIF_04","B_Kitbag_cbr","B_Kitbag_desert_lxWS","B_Messenger_Black_F","B_Messenger_Coyote_F","B_Messenger_Gray_F","B_Messenger_Olive_F"]
+             
+Uniforms - ["UK3CB_TKC_C_U_01","UK3CB_TKC_C_U_01_B","UK3CB_TKC_C_U_01_C","UK3CB_TKC_C_U_01_D","UK3CB_TKC_C_U_01_E","UK3CB_TKC_C_U_02","UK3CB_TKC_C_U_02_B","UK3CB_TKC_C_U_02_C","UK3CB_TKC_C_U_02_D","UK3CB_TKC_C_U_02_E","UK3CB_TKC_C_U_03","UK3CB_TKC_C_U_03_B","UK3CB_TKC_C_U_03_C","UK3CB_TKC_C_U_03_D","UK3CB_TKC_C_U_03_E","UK3CB_TKC_C_U_06","UK3CB_TKC_C_U_06_B","UK3CB_TKC_C_U_06_C","UK3CB_TKC_C_U_06_D","UK3CB_TKC_C_U_06_E","U_C_Burka_2_Woman","U_C_Burka_2_Woman","U_C_Burka_2_Woman"]
+
+Headgear - ["UK3CB_TKC_H_Turban_01_1","UK3CB_TKC_H_Turban_02_1","UK3CB_TKC_H_Turban_06_1","UK3CB_TKC_H_Pilot_Turban_01_1","UK3CB_TKC_H_Turban_03_1","UK3CB_TKC_H_Turban_04_1","UK3CB_TKC_H_Turban_05_1","UK3CB_TKM_I_H_Turban_03_1","UK3CB_TKM_I_H_Turban_04_1","UK3CB_TKM_I_H_Turban_05_1","UK3CB_TKM_I_H_Turban_01_1","UK3CB_TKM_I_H_Turban_02_1","UK3CB_H_Worker_Cap_01","headwrap_2_1","headwrap_2_2","headwrap_2_3","headwrap_b_2_1","headwrap_b_2_2","headwrap_b_2_3","turban_2_1","turban_2_2","turban_2_3","turban_2_4","turban_2_5","turban_2_6","turban_2_7","turban_b_2_1","turban_b_2_2","turban_b_2_3","turban_b_2_4","turban_b_2_5","turban_b_2_6","turban_b_2_7"]
+
+Faces - ["Face05_EP1","Face04_EP1","Face12_EP1","Face09_EP1","Face01_EP1","Face17_EP1","PersianHead_A3_01","Face10_EP1","asczHead_boomlakhaoo_A3","Face20_EP1","Face03_EP1","Face14_EP1","Face02_EP1","Face19_EP1","PersianHead_A3_02","Face07_EP1","Face15_EP1","Mavros","asczHead_novotny_A3","Face13_EP1","Face06_EP1","Face70","PersianHead_A3_03"]
+
+Goggles - ["Bear_RoundGlasses","Bear_RoundGlasses_blk","Bear_RoundGlasses_gold","G_Spectacles","G_Glasses_black_RF","G_Glasses_white_RF","cigs_lucky_strike_cig0","cigs_eckstein_cig0","cigs_morley_cig0","cigs_craven_cig0","USP_BEARD_BLK","USP_BEARD_BLK2","USP_BEARD_BLK3","USP_BEARD_BLK4","USP_BEARD_BLK5","VSM_beard_1","VSM_beard_2","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""]
+
+Vehicles - ["UK3CB_TKC_C_Datsun_Civ_Closed","UK3CB_TKC_C_Datsun_Civ_Open","UK3CB_TKC_C_Hatchback","UK3CB_TKC_C_Hilux_Civ_Closed","UK3CB_TKC_C_Hilux_Civ_Open","UK3CB_TKC_C_Kamaz_Covered","UK3CB_TKC_C_Kamaz_Fuel","UK3CB_TKC_C_Lada","UK3CB_TKC_C_Lada_Taxi","UK3CB_TKC_C_Old_Bike","UK3CB_TKC_C_Pickup","UK3CB_TKC_C_Sedan","UK3CB_TKC_C_Skoda","UK3CB_TKC_C_S1203","UK3CB_TKC_C_TT650","UK3CB_MEC_C_Gaz24","UK3CB_MEC_C_YAVA","UK3CB_C_Lada","UK3CB_C_Landcruiser","UK3CB_TKC_C_V3S_Open"]
+
+Animal Cargo - ["UK3CB_TKC_C_Datsun_Civ_Open","UK3CB_TKC_C_Hilux_Civ_Open","UK3CB_TKC_C_Pickup","UK3CB_TKC_C_V3S_Open"]

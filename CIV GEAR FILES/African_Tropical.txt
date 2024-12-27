@@ -1,0 +1,18 @@
+African/Tropical
+
+Class - UK3CB_ADC_C_CIV_CHR_01,C_Man_casual_1_F_tanoan
+
+Backpacks - ["B_CivilianBackpack_01_Everyday_Astra_F","B_CivilianBackpack_01_Everyday_Black_F","B_CivilianBackpack_01_Everyday_Vrana_F","B_CivilianBackpack_01_Sport_Blue_F","B_CivilianBackpack_01_Sport_Green_F","B_CivilianBackpack_01_Sport_Red_F","B_DuffleBag_Black_RF","B_DuffleBag_Blue_RF","B_DuffleBag_Sand_RF","B_DuffleBag_Olive_RF","B_DuffleBag_Red_RF","B_DuffleBag_VRANA_RF"]
+             
+Uniforms - ["UK3CB_CHC_C_U_CAN_01","UK3CB_ADC_C_Pants_U_01","UK3CB_ADC_C_Pants_U_02","UK3CB_ADC_C_Pants_U_03","UK3CB_ADC_C_Pants_U_04","UK3CB_ADC_C_Pants_U_05","UK3CB_ADC_C_Pants_U_06","UK3CB_ADC_C_Pants_U_07","UK3CB_ADC_C_Pants_U_08","UK3CB_ADC_C_Pants_U_09","UK3CB_ADC_C_Pants_U_10","UK3CB_ADC_C_Pants_U_11","UK3CB_ADC_C_Pants_U_17","UK3CB_MEI_B_U_Pants_01","UK3CB_MEI_B_U_Pants_11","uni_CIV_61","uni_CIV_62","uni_CIV_63","uni_CIV_64","uni_CIV_65","uni_CIV_66","uni_CIV_67","uni_CIV_68","uni_CIV_69","uni_CIV_70","uni_CIV_71","uni_CIV_72","uni_CIV_73","uni_CIV_74","uni_CIV_75","uni_CIV_76","uni_CIV_77","uni_CIV_78","uni_CIV_79","uni_CIV_80","U_OrestesBody","U_C_Man_casual_2_F","U_C_Man_casual_3_F","U_C_Man_casual_1_F","U_C_man_sport_1_F","U_C_man_sport_3_F","U_C_man_sport_2_F","U_C_Man_casual_6_F","U_C_Man_casual_4_F","U_C_Man_casual_5_F","U_C_ArtTShirt_01_v6_F","U_C_ArtTShirt_01_v1_F","U_C_ArtTShirt_01_v2_F","U_C_ArtTShirt_01_v4_F","U_C_ArtTShirt_01_v5_F","U_C_ArtTShirt_01_v3_F","U_C_Uniform_Farmer_01_F","U_I_L_Uniform_01_tshirt_skull_F","U_I_L_Uniform_01_tshirt_sport_F","U_C_ManJacket_01_sage"]
+
+Headgear - ["H_Cap_blk","H_Cap_blu","H_Cap_red","H_Hat_tan","H_Hat_checker","H_StrawHat_dark","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""]
+
+Faces - []
+
+Goggles - ["G_Sport_Red","G_Sport_Blackyellow","G_Glasses_black_RF","G_Glasses_white_RF","cigs_lucky_strike_cig0","agls_pitvipers","agls_pitvipers_brights_alt","USP_RAID_BLK3","USP_GATORZ_BLK3","USP_GATORZ_UP_BLK3","USP_DETCORD_BLK3","USP_DETCORD_UP_BLK3","USP_STRAIGHTJACKET_GRN","USP_STRAIGHTJACKET_GRN3","USP_STRAIGHTJACKET2_GRN","USP_STRAIGHTJACKET2_GRN3","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""]
+
+Vehicles - ["UK3CB_ADC_C_Datsun_Civ_Closed","UK3CB_ADC_C_Datsun_Civ_Open","UK3CB_ADC_C_Hatchback","UK3CB_ADC_C_Hilux_Civ_Closed","UK3CB_ADC_C_Hilux_Civ_Open","UK3CB_ADC_C_Lada","UK3CB_ADC_C_Lada_Taxi","UK3CB_ADC_C_LR_Closed","UK3CB_ADC_C_Landcruiser","UK3CB_ADC_C_Old_Bike","UK3CB_ADC_C_Sedan","UK3CB_ADC_C_Skoda","UK3CB_ADC_C_S1203","UK3CB_ADC_C_TT650","UK3CB_ADC_C_Golf","UK3CB_ADC_C_Gaz24","UK3CB_ADC_C_YAVA","UK3CB_ADC_C_Kamaz_Fuel"]
+
+
+Animal Cargo - []

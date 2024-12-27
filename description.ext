@@ -1,0 +1,114 @@
+respawn = 3;                    //Respawn at respawn markers
+respawnOnStart = -1;	    	//Don't respawn, don't run onPlayerRespawn on start
+respawnDelay = 10;				//Set Respawn timer
+enableDebugConsole = 1;     	//Allows debug console for admin
+disabledAI = 1;			        //Stop AI from filling playable roles
+allowProfileGlasses = 0;        //Stops players loading in with facewear
+
+respawnTemplatesWest[] = {"Wave","MenuPosition"};
+//*****************************************************************************************************************
+//Disable all chat channels except vehicle and local
+disableChannels[] = {
+	{
+		0,		// channel ID
+		true,	// disable text chat
+		true	// disable voice chat
+	},
+	{ 1, true, true },{ 2, true, true },{ 3, true, true },{ 4, false, true },{ 5, false, true }
+};
+//*****************************************************************************************************************
+// Mission Image
+loadScreen		= "";
+
+//*****************************************************************************************************************
+//Corpse management 
+corpseManagerMode = 3;
+corpseRemovalMinTime = 300;
+corpseRemovalMaxTime = 600;
+wreckManagerMode = 2;
+minPlayerDistance = 50;
+
+//*****************************************************************************************************************
+class CfgSounds {
+
+    sounds[] = {};
+
+        class intro
+        { 
+            name = "Intro";
+            sound[] = {media\sounds\intro.ogg, db+9, 1.0};
+            titles[] = {};
+        };
+            class nzf_door_open
+        {
+            name = "Door Wind Open";
+            sound[] = {"nzf_HALO\sounds\doorwindopen.ogg", 12, 1, 300};
+            titles[] = {0, ""};
+        };
+        class nzf_engine_ext
+        {
+            name = "External Engine";
+            sound[] = {"nzf_HALO\sounds\ext_engine_hi.ogg", 5, 1, 300};
+            titles[] = {0, ""};
+        };
+        class nzf_engine_int
+        {
+            name = "Internal Engine";
+            sound[] = {"nzf_HALO\sounds\int_engine_hi.ogg", 1.2, 1, 100};
+            titles[] = {0, ""};
+        };
+        class nzf_ramp_open
+        {
+            name = "Ramp Servo Open";
+            sound[] = {"nzf_HALO\sounds\ServoRamp1.ogg", 3, 1, 200};
+            titles[] = {0, ""};
+        };
+        class nzf_ramp_close
+        {
+            name = "Ramp Servo Close";
+            sound[] = {"nzf_HALO\sounds\ServoRamp2.ogg", 3, 1, 200};
+            titles[] = {0, ""};
+        };
+		
+};
+//*****************************************************************************************************************
+#include "modules\grad-passport\grad_passport.hpp"
+
+class Extended_InitPost_EventHandlers {
+     class CAManBase {
+		init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";
+	};
+};
+
+class CfgFunctions
+{
+	#include "INC_undercover\cfgFunctions.hpp"
+   	#include "functions\cfgfunctions.hpp"
+    #include "modules\grad-gpsTracker\cfgFunctions.hpp"
+    #include "modules\grad-passport\cfgFunctions.hpp"
+    #include "nzf_HALO\functions\functions.hpp"
+};
+
+class CfgRemoteExec
+{
+   class Functions
+   {
+       mode = 2;
+       jip = 1;
+       #include "INC_undercover\functionsWhitelist.hpp"
+   };
+};
+//*****************************************************************************************************************
+class CfgDebriefing
+{
+    class NOT_PJ
+    {
+        title = "This is a restricted role.";
+        description = "Only qualified PJ's can take this slot. Talk to a community manager about training for this role";
+        picture = "";
+    };
+};
+
+class Extended_PreInit_EventHandlers {
+	NZFTemplate = call compile preprocessFileLineNumbers "XEH_preInit.sqf";
+};
