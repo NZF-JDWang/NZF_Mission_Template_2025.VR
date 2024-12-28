@@ -35,6 +35,7 @@ class NZF
 		class intro {};
 		class setBurkaTexture {};
 		class initStretchers {};
+		class introText {};
 	};
 
 };

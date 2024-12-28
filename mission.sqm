@@ -8,7 +8,7 @@ class EditorData
 	toggles=1569;
 	class ItemIDProvider
 	{
-		nextID=3128;
+		nextID=3138;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2651;
+		nextID=2739;
 	};
 	class Camera
 	{
-		pos[]={7648.4575,27.288225,7483.5166};
-		dir[]={-0.003483067,-0.97518188,-0.22143489};
-		up[]={-0.015338067,0.2212169,-0.97510308};
-		aside[]={-0.9998883,9.6745134e-07,0.01572853};
+		pos[]={7605.8892,27.461147,7495.3408};
+		dir[]={-0.020512957,-0.47084549,-0.88198578};
+		up[]={-0.010948172,0.88221496,-0.47072324};
+		aside[]={-0.99973935,2.093584e-07,0.023251234};
 	};
 };
 binarizationWanted=0;
@@ -50066,7 +50066,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -54945,7 +54945,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7655.9819,5.0014391,7480.0308};
+								position[]={7657.9336,5.0014391,7480.0566};
 								angles[]={0,3.1150985,0};
 							};
 							side="West";
@@ -55191,7 +55191,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7664.7632,5.378634,7476.4009};
+						position[]={7664.6826,5.378634,7476.4551};
 					};
 					side="Empty";
 					flags=5;
@@ -55225,7 +55225,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7649.0708,5,7476.0674};
-						angles[]={-0,0.020402899,0};
+						angles[]={0,0.020402899,0};
 					};
 					side="Empty";
 					flags=4;
@@ -55419,7 +55419,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={7658.0156,5,7479.9912};
+						position[]={7659.9917,5,7480.0171};
 						angles[]={0,3.1377704,0};
 					};
 					name="HC1";
@@ -55454,7 +55454,7 @@ class Mission
 					dataType="Comment";
 					class PositionInfo
 					{
-						position[]={7655.3394,5,7481.9692};
+						position[]={7655.9966,5,7480.165};
 					};
 					title="Check for ZEUS";
 					description="player in (missionNamespace getVariable [""nzf_gameMasters"", []])" \n "" \n "That code will return true if a player in one of the 2 Zeus slots." \n "This way you can write scripts that affect everyone BUT the Zeus  ";
@@ -55663,8 +55663,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7695.8872,5.0014391,7471.9946};
-						angles[]={0,3.1386955,0};
+						position[]={7631.9824,5.0014391,7472.019};
+						angles[]={0,6.2802882,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -74127,7 +74127,8 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={7695.8911,5,7471.3999};
+				position[]={7631.9785,5,7472.5142};
+				angles[]={0,3.1415925,0};
 			};
 			title="GPS tracked object  (see cba settings)";
 			description="Just name the object trackedObject";
