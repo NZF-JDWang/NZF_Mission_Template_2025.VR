@@ -42,7 +42,7 @@ class CfgSounds {
             class nzf_door_open
         {
             name = "Door Wind Open";
-            sound[] = {"nzf_HALO\sounds\doorwindopen.ogg", 12, 1, 300};
+            sound[] = {"nzf_HALO\sounds\dooropenwind.ogg", 12, 1, 300};
             titles[] = {0, ""};
         };
         class nzf_engine_ext
