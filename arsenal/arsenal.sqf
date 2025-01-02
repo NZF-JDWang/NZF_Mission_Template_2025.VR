@@ -86,11 +86,16 @@ case "Breacher": {
 		[_box, _beret + _uniforms + _vestsOperator + _backpacksBreacher + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _launchers + _miscAce + [
 				"MineDetector",
 				"121_serbu_breacher",
-				"tsp_frameCharge_mag",
-				"tsp_popperCharge_mag",
-				"tsp_popperCharge_auto_mag",
-				"tsp_stickCharge_mag",
-				"tsp_stickCharge_auto_mag",
+				"tsp_breach_block_mag",
+				"tsp_breach_block_auto_mag",
+				"tsp_breach_linear_mag",
+				"tsp_breach_linear_auto_mag",
+				"tsp_breach_popper_mag",
+				"tsp_breach_popper_auto_mag",
+				"tsp_breach_package_mag",
+				"tsp_breach_silhouette_mag",
+				"tsp_breach_stick_mag",
+				"tsp_breach_shock",
 				"ACE_M26_Clacker",
 				"ACE_Clacker"
 			],false] call ace_arsenal_fnc_initBox; 
