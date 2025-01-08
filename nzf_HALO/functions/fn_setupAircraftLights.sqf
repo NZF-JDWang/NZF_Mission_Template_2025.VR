@@ -1,20 +1,19 @@
-params ["_plane", ["_lightColor", [0.5, 0, 0]]];
+/*
+ * Author: [NZF] JD Wang
+ * Sets up internal red lights in the aircraft
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * Array of created light sources
+ *
+ * Example:
+ * private _lights = [] call nzf_HALO_fnc_setupAircraftLights
+ */
 
-// Initialize jump master if not already done (server-side)
-if (isServer && {isNull (_plane getVariable ["NZF_jumpMaster", objNull])}) then {
-    [_plane] call NZF_HALO_fnc_initJumpPlane;
-};
+if (!hasInterface) exitWith {};
 
-// Clean up any existing lights first
-for "_i" from 0 to 10 do {  // Using 10 as a safe upper limit
-    private _existingLight = _plane getVariable [format ["NZF_light_%1", _i], objNull];
-    if (!isNull _existingLight) then {
-        deleteVehicle _existingLight;
-        _plane setVariable [format ["NZF_light_%1", _i], nil];
-    };
-};
-
-// Define light positions
 private _relativePositions = [
     [-0.00488281,-0.605469,-2.24744],
     [-0.00488281,3.30469,-2.24744],
@@ -22,18 +21,32 @@ private _relativePositions = [
     [-0.00488281,-8.39844,-2.24744]
 ];
 
-// Create lights for each position
+// Clean up existing lights if any
 {
-    private _light = "#lightpoint" createVehicleLocal (getPosATL _plane);
-    _light attachTo [_plane, _x];
+    deleteVehicle _x;
+} forEach (missionNamespace getVariable ["NZF_HALO_aircraftLights", []]);
+
+private _lights = [];
+
+{
+    // Create light source locally for each client
+    private _light = "#lightpoint" createVehicleLocal [0,0,0];
+    _light attachTo [jumpPlane, _x];
     
-    // Set light properties
-    _light setLightColor _lightColor;
-    _light setLightAmbient [_lightColor select 0 * 0.2, 0, 0];
-    _light setLightIntensity 30;
-    _light setLightAttenuation [0.3, 0, 0, 1];
+    // Set up light properties (red military lighting)
+    _light setLightColor [1,0,0];
+    _light setLightAmbient [0.5,0,0];
+    _light setLightBrightness 0.5;
+    _light setLightDayLight true;
     _light setLightUseFlare false;
+    _light setLightAttenuation [0, 0, 0, 0];  // No attenuation for maximum fill
+    _light setLightIntensity 200;
     
-    // Store light in array for cleanup
-    _plane setVariable [format ["NZF_light_%1", _forEachIndex], _light];
-} forEach _relativePositions; 
+    // Store light object
+    _lights pushBack _light;
+} forEach _relativePositions;
+
+// Store lights in local missionNamespace
+missionNamespace setVariable ["NZF_HALO_aircraftLights", _lights];
+
+_lights

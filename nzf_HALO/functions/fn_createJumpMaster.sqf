@@ -1,31 +1,25 @@
-params ["_plane"];
+/*
+ * Author: [NZF] JD Wang
+ * Creates and configures the airborne jumpmaster
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * 0: Jumpmaster <OBJECT>
+ *
+ * Example:
+ * private _jumpMaster = [] call nzf_HALO_fnc_createJumpMaster
+ */
 
-if (!isServer) exitWith {};
+// Create the airborne jumpmaster 
+private _group = createGroup [civilian, true];
+private _jumpMaster = _group createUnit ["C_Man_casual_1_F", [0,0,0], [], 0, "NONE"];
 
-private _jumpMasterPosition = [0.882813, 2.39355, -4.87677];
+// Basic setup
+_jumpMaster disableAI "FSM";
 
-// Create the jump master
-private _jumpMaster = createAgent ["C_man_1", [0,0,0], [], 0, "NONE"];
-_jumpMaster setVariable ["BIS_enableRandomization", false];
-
-// Remove ACE interactions with correct syntax
-[_jumpMaster, _jumpMaster] call ace_common_fnc_claim;
-
-// Comprehensive AI and behavior setup
-{
-    _jumpMaster disableAI _x;
-} forEach ["TARGET", "AUTOTARGET", "MOVE", "FSM", "TEAMSWITCH", "PATH", "COVER", "AUTOCOMBAT", "SUPPRESSION"];
-
-_jumpMaster setBehaviour "CARELESS";
-_jumpMaster setCombatMode "BLUE";
-_jumpMaster enableDynamicSimulation false;
-_jumpMaster allowDamage false;
-_jumpMaster enableSimulation true;
-
-// Store position for later use
-_jumpMaster setVariable ["NZF_jumpMasterPosition", _jumpMasterPosition, true];
-
-// Remove existing items
+// Remove all gear
 removeAllWeapons _jumpMaster;
 removeAllItems _jumpMaster;
 removeAllAssignedItems _jumpMaster;
@@ -35,25 +29,20 @@ removeBackpack _jumpMaster;
 removeHeadgear _jumpMaster;
 removeGoggles _jumpMaster;
 
-// Add containers and equipment
+// Add specific gear
 _jumpMaster forceAddUniform "tfl_pcu_mc_mc_g_uniform";
 _jumpMaster addVest "SV2B_LPU23P";
 _jumpMaster addHeadgear "HGU68P_MBU14P_Amber";
 
-// Add items
-_jumpMaster linkItem "ItemMap";
-_jumpMaster linkItem "ItemCompass";
-_jumpMaster linkItem "ItemWatch";
+// Additional AI and behavior setup
+{
+    _jumpMaster disableAI _x;
+} forEach ["TARGET", "AUTOTARGET", "MOVE", "TEAMSWITCH", "PATH", "COVER", "AUTOCOMBAT", "SUPPRESSION"];
 
-// Position the unit relative to plane without attachTo
-private _planePos = getPosATL _plane;
-private _planeDir = getDir _plane;
-private _finalPos = _plane modelToWorld _jumpMasterPosition;
-_jumpMaster setPosATL _finalPos;
-_jumpMaster setDir (_planeDir + 180);  // Face into cargo area
+// Position the jumpmaster in the plane
+_jumpMaster attachTo [jumpPlane, [1, 2.6, -4.9]];
 
-// Store reference
-_plane setVariable ["NZF_jumpMaster", _jumpMaster, true];
+// Set direction after attachment using vectors (facing backward)
+_jumpMaster setVectorDirAndUp [[0,-1,0], [0,0,1]];
 
-// Return the created unit
 _jumpMaster 

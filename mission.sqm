@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1569;
+	toggles=545;
 	class ItemIDProvider
 	{
-		nextID=3138;
+		nextID=3273;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2761;
+		nextID=2807;
 	};
 	class Camera
 	{
-		pos[]={7670.5815,83.236519,7563.9839};
-		dir[]={-0.0080947634,-0.69303799,-0.72091216};
-		up[]={-0.0077814641,0.72085828,-0.69303733};
-		aside[]={-0.99997604,-2.2572669e-07,0.01122712};
+		pos[]={7652.3418,25.733488,7434.4448};
+		dir[]={-0.25979242,-0.48566595,0.83464754};
+		up[]={-0.14433807,0.87414443,0.46372184};
+		aside[]={0.9548164,0,0.29719618};
 	};
 };
 binarizationWanted=0;
@@ -50208,8 +50208,8 @@ class Mission
 		windForced=1;
 		year=2035;
 		day=28;
-		hour=13;
-		minute=37;
+		hour=10;
+		minute=16;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
@@ -54647,7 +54647,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7657.9336,5.0014391,7480.0566};
+								position[]={7657.9341,5.0014391,7480.0566};
 								angles[]={0,3.1150985,0};
 							};
 							side="West";
@@ -55349,7 +55349,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7702.3672,16.04421,7519.2485};
+						position[]={7702.3672,13.37779,7519.2485};
 					};
 					side="Empty";
 					class Attributes
@@ -55358,7 +55358,7 @@ class Mission
 					};
 					id=3086;
 					type="C130J_static_EP1";
-					atlOffset=5;
+					atlOffset=2.3335795;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -55391,9 +55391,8 @@ class Mission
 						ammo=0;
 						lock="LOCKED";
 						fuel=0;
-						init="this setVariable [""NZF_isGroundPlane"", true, true]; " \n "[this] spawn nzf_fnc_initGroundPlane;" \n "[this, this] call ace_common_fnc_claim;";
+						init="[this, this] call ace_common_fnc_claim;" \n "";
 						name="groundPlane";
-						disableSimulation=1;
 					};
 					id=3094;
 					type="USAF_C130J_Cargo";
@@ -55414,6 +55413,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="ace_cookoff_enable";
+							expression="if (!_value) then {_this setVariable ['ace_cookoff_enable', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="ammoBox";
 							expression="[_this,_value] call bis_fnc_initAmmoBox;";
 							class Value
@@ -55425,7 +55437,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="usaf_rearRampPos";
 							expression="_this setVariable['usaf_rearRampPos', _value]; [_this, _value] call USAF_C130_fnc_rampCtrl;";
@@ -55438,7 +55450,20 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute4
+						{
+							property="ace_cookoff_enableAmmoCookoff";
+							expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 				class Item2
@@ -55706,22 +55731,20 @@ class Mission
 				class Item8
 				{
 					dataType="Trigger";
-					position[]={7647.7583,7.7659998,7525.3042};
+					position[]={7647.7578,7.5109997,7523.2778};
 					class Attributes
 					{
 						name="groundTrigger";
-						condition="this && {count (thisList select {isPlayer _x && (vehicle _x) == _x}) > 0}";
-						onActivation="private _players = thisList select {isPlayer _x && (vehicle _x) == _x}; " \n "{ " \n "    [_x] remoteExec [""nzf_HALO_fnc_assignJumpPosition"", 2]; " \n "} forEach _players;";
-						sizeA=1.6453613;
-						sizeB=4.691699;
-						sizeC=1.5;
+						sizeA=1.4;
+						sizeB=6;
+						sizeC=1.4;
 						repeatable=1;
 						activationBy="ANYPLAYER";
 						isRectangle=1;
 					};
 					id=3084;
 					type="EmptyDetectorArea10x10";
-					atlOffset=1.4884076;
+					atlOffset=1.2337937;
 				};
 				class Item9
 				{
@@ -55791,16 +55814,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7650.6875,5.0014391,7514.3481};
-								angles[]={0,3.1415935,0};
+								position[]={7647.9302,5.0014391,7511.3452};
+								angles[]={0,3.1415927,0};
 							};
 							side="Civilian";
 							flags=7;
 							class Attributes
 							{
-								init="this disableAI ""FSM"";";
+								init="this disableAI ""ALL"";" \n "[this, this] call ace_common_fnc_claim;";
 								name="jumpMasterGround";
-								disableSimulation=1;
 								ignoreByDynSimulGrid=1;
 								class Inventory
 								{
@@ -55956,12 +55978,31 @@ class Mission
 					};
 					class Attributes
 					{
+						behaviour="CARELESS";
+						dynamicSimulation=1;
 					};
 					id=3099;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="JUMPMASTERGROUND";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=3085;
-			atlOffset=0.17531633;
+			atlOffset=0.15807724;
 		};
 		class Item4
 		{

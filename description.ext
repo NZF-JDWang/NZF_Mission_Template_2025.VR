@@ -86,7 +86,7 @@ class CfgFunctions
    	#include "functions\cfgfunctions.hpp"
     #include "modules\grad-gpsTracker\cfgFunctions.hpp"
     #include "modules\grad-passport\cfgFunctions.hpp"
-    #include "nzf_HALO\functions\functions.hpp"
+    #include "nzf_HALO\functions\cfgFunctions.hpp"
 };
 
 class CfgRemoteExec
