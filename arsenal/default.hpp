@@ -6084,7 +6084,11 @@ _PJs = [
 	"kat_BVM",
 	"kat_Pulseoximeter",
 	"vtx_stretcher_item",
-	"ACE_suture"
+	"ACE_suture",
+	"ACE_tourniquet",
+	"kat_BPCuff",
+	"kat_Painkiller",
+	"ACE_bodyBag"
 ];
 _ammo = [
 	"X26_Cartridge_Yellow",
