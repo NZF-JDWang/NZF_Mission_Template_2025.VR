@@ -105,7 +105,7 @@ case "MachineGunner": {
 		player setVariable ["Ace_medical_medicClass", 0];
 		player setVariable ["ACE_isEngineer", 0, true];
 		player setUnitTrait ["explosiveSpecialist ", false];
-		[_box, _beret + _uniforms + _vestsMachineGunner + _backpacksSmall + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _machineGuns + _optics + _attachments + _miscAce + [
+		[_box, _beret + _uniforms + _vestsMachineGunner + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _machineGuns + _optics + _attachments + _miscAce + [
 				
 			],false] call ace_arsenal_fnc_initBox; 
 };

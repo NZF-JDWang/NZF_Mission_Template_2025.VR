@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2819;
+		nextID=2834;
 	};
 	class Camera
 	{
-		pos[]={7652.3418,25.733488,7434.4448};
-		dir[]={-0.25979242,-0.48566595,0.83464754};
-		up[]={-0.14433807,0.87414443,0.46372184};
-		aside[]={0.9548164,0,0.29719618};
+		pos[]={7677.752,8.8936548,7469.896};
+		dir[]={-0.84957576,-0.34097451,0.40243927};
+		up[]={-0.30815032,0.94007248,0.14596908};
+		aside[]={0.42809379,0,0.90373421};
 	};
 };
 binarizationWanted=0;
@@ -343,7 +343,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=1390;
+									items=1427;
 									class Item0
 									{
 										class data
@@ -11464,6 +11464,302 @@ class CustomAttributes
 											value="nzf_template_trackedobject";
 										};
 									};
+									class Item1390
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_compat";
+										};
+									};
+									class Item1391
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_hint";
+										};
+									};
+									class Item1392
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_sling";
+										};
+									};
+									class Item1393
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_sling_scroll";
+										};
+									};
+									class Item1394
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_sound";
+										};
+									};
+									class Item1395
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_shake";
+										};
+									};
+									class Item1396
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_attachment";
+										};
+									};
+									class Item1397
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_ladder";
+										};
+									};
+									class Item1398
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_throw";
+										};
+									};
+									class Item1399
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_uav";
+										};
+									};
+									class Item1400
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_watch";
+										};
+									};
+									class Item1401
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_compass";
+										};
+									};
+									class Item1402
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_cancel";
+										};
+									};
+									class Item1403
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_contact";
+										};
+									};
+									class Item1404
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_ivan";
+										};
+									};
+									class Item1405
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_duo";
+										};
+									};
+									class Item1406
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_squats";
+										};
+									};
+									class Item1407
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_inspect";
+										};
+									};
+									class Item1408
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_thumbsup";
+										};
+									};
+									class Item1409
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_thumbsdown";
+										};
+									};
+									class Item1410
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_loser";
+										};
+									};
+									class Item1411
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_heart";
+										};
+									};
+									class Item1412
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_bang";
+										};
+									};
+									class Item1413
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_breach";
+										};
+									};
+									class Item1414
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_frag";
+										};
+									};
+									class Item1415
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_shotgun";
+										};
+									};
+									class Item1416
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_ready";
+										};
+									};
+									class Item1417
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_peek";
+										};
+									};
+									class Item1418
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_danger";
+										};
+									};
+									class Item1419
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_halt";
+										};
+									};
+									class Item1420
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_column";
+										};
+									};
+									class Item1421
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_line";
+										};
+									};
+									class Item1422
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_wedge";
+										};
+									};
+									class Item1423
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_clacker";
+										};
+									};
+									class Item1424
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_captive";
+										};
+									};
+									class Item1425
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tsp_cba_animate_grenade";
+										};
+									};
+									class Item1426
+									{
+										class data
+										{
+											singleType="STRING";
+											value="kat_vitals_enablesimplemedical";
+										};
+									};
 								};
 							};
 						};
@@ -11474,7 +11770,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=1390;
+									items=1427;
 									class Item0
 									{
 										class data
@@ -50147,6 +50443,1005 @@ class CustomAttributes
 													{
 														singleType="STRING";
 														value="trackedObject";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1390
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1391
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="ACE";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1392
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1393
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1394
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1395
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1396
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1397
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1398
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1399
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1400
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1401
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1402
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1403
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1404
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1405
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1406
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1407
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1408
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1409
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1410
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1411
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1412
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1413
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1414
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1415
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1416
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1417
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1418
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1419
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1420
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1421
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1422
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1423
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1424
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1425
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1426
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
 													};
 												};
 												class Item1

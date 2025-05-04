@@ -1884,11 +1884,13 @@ _backpacksSmall = [
 _backpacksLeader = [
 	"asip_b_02_cb",
 	"asip_b_01_mc",
-	"asip_b_03_lv"
+	"asip_b_04_aor1",
+	"asip_b_05_aor2"
 ];
 _backpacksComms = [
 	"asip_a_02_cb",
-	"asip_a_03_lv",
+	"asip_a_04_aor1",
+	"asip_a_05_aor2",
 	"asip_a_01_mc",
 	"satcom_01"
 ];
@@ -1945,9 +1947,11 @@ _backpacksPJ = [
 	"nsw_walk"
 ];
 _backpacksLarge = [
-	"nsw_ecpv1_2",
-	"nsw_ecpv1_3",
-	"nsw_ecpv1"
+	"pmc_lbt1476_aor1",
+	"pmc_lbt1476_aor2",
+	"pmc_lbt1476_cb",
+	"pmc_lbt1476_mc",
+	"pmc_lbt1476_rgr"
 ];
 _headgearLight = [
 	"UK3CB_LNM_B_H_BoonieHat_MULTICAM",
@@ -3172,6 +3176,7 @@ _headgearFixedWing = [
 	"JHMCS2_MBU20P_Night"
 ];
 _facewear = [
+	"USP_M50_BLK2",
 	"USP_RAID_BLK",
 	"USP_RAID_BLK2",
 	"USP_RAID_BLK3",
@@ -6047,7 +6052,6 @@ _advancedMedical = [
 	"ACE_salineIV",
 	"ACE_salineIV_250",
 	"ACE_salineIV_500",
-	"ACE_suture",
 	"vtx_stretcher_item"
 ];
 _PJs = [
@@ -6060,8 +6064,8 @@ _PJs = [
 	"kat_norepinephrine",
 	"kat_nitroglycerin",
 	"kat_phenylephrine",
-	"kat_PainkillerItem",
-	"kat_CarbonateItem",
+	"kat_Painkiller",
+	"kat_Carbonate",
 	"kat_TXA",
 	"kat_fentanyl",
 	"kat_amiodarone",
@@ -6088,7 +6092,9 @@ _PJs = [
 	"ACE_tourniquet",
 	"kat_BPCuff",
 	"kat_Painkiller",
-	"ACE_bodyBag"
+	"ACE_bodyBag",
+	"ACE_splint",
+	"kat_ultrasound"
 ];
 _ammo = [
 	"X26_Cartridge_Yellow",
@@ -6172,7 +6178,9 @@ _pistols = [
 	"Tier1_Glock19_Urban_TB",
 	"Tier1_Glock22_TB_Rail",
 	"Tier1_P320_TB",
-	"Tier1_P320_PMM"
+	"Tier1_P320_PMM",
+	"tsp_meleeWeapon_m9",
+	"tsp_meleeWeapon_kabar"
 ];
 _rifles = [
 	"rhs_weap_M320",
@@ -6339,7 +6347,9 @@ _launchers = [
 	"rhs_weap_m72a7",
 	"rhs_weap_M136",
 	"rhs_weap_M136_hedp",
-	"rhs_weap_M136_hp"
+	"rhs_weap_M136_hp",
+	"tsp_meleeWeapon_sledge_black",
+	"tsp_meleeWeapon_halligan"
 ];
 _optics = [
 	"Tier1_MicroT2_Black",
@@ -6850,7 +6860,9 @@ _miscAce = [
 	"ACRE_VHF30108MAST",
 	"nzf_headbag_inventory",
 	"kat_CaffeineItem",
-	"ACE_EHP"
+	"ACE_EHP",
+	"ChemicalDetector_01_watch_F",
+	"kat_gasmaskFilter"
 ];
 
 
