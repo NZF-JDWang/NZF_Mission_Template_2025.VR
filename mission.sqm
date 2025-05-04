@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2834;
+		nextID=2837;
 	};
 	class Camera
 	{
@@ -50,6 +50,7 @@ addons[]=
 	"FSQN_VIP",
 	"CUP_Misc_e_Config",
 	"USAF_C130J_C",
+	"nzf_supplyCrates",
 	"A3_Structures_F_EPA_Mil_Scrapyard",
 	"A3_Structures_F_Heli_Civ_Market",
 	"A3_Modules_F_Effects",
@@ -64,7 +65,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=29;
+		items=30;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -194,56 +195,61 @@ class AddonsMetaData
 		};
 		class Item20
 		{
+			className="nzf_supplyCrates";
+			name="nzf_supplyCrates";
+		};
+		class Item21
+		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item23
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item25
 		{
 			className="MoePilotHelmets";
 			name="Moe Pilot Helmets";
 			author="556Moe";
 		};
-		class Item25
+		class Item26
 		{
 			className="tfl_cold";
 			name="tfl_cold";
 		};
-		class Item26
+		class Item27
 		{
 			className="aceax_compat_tfl_cold";
 			name="compat_TFL_cold";
 			author="wanoO";
 		};
-		class Item27
+		class Item28
 		{
 			className="MoePilotVests";
 			name="Moe Pilot Vests";
 			author="556Moe";
 		};
-		class Item28
+		class Item29
 		{
 			className="sss_cas";
 			name="cas";

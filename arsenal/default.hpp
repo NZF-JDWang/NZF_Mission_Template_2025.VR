@@ -6862,7 +6862,8 @@ _miscAce = [
 	"kat_CaffeineItem",
 	"ACE_EHP",
 	"ChemicalDetector_01_watch_F",
-	"kat_gasmaskFilter"
+	"kat_gasmaskFilter", 
+	"MineDetector"
 ];
 
 
