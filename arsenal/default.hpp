@@ -1933,6 +1933,7 @@ _backpacksBreacher = [
 	"TFL_jpc_pack_rg_halligan"
 ];
 _backpacksMedic = [
+	"ghost_medpouch",
 	"nsw_M9aor1",
 	"nsw_M9aor2",
 	"nsw_M9",
@@ -6148,7 +6149,10 @@ _ammo = [
 	"rhs_mag_m713_Red",
 	"rhs_mag_m714_White",
 	"rhs_mag_m715_Green",
-	"rhs_mag_m716_yellow"
+	"rhs_mag_m716_yellow",
+	"MRAWS_HE_F",
+	"MRAWS_HEAT55_F",
+	"MRAWS_HEAT_F"
 ];
 _throwablesExplosives = [
 	"ACE_Chemlight_HiBlue",
@@ -6338,12 +6342,7 @@ _machineGuns = [
 	"Tier1_MK46_Mod0"
 ];
 _launchers = [
-	"rhs_weap_fgm148",
 	"launch_NLAW_F",
-	"launch_MRAWS_green_F",
-	"MRAWS_HE_F",
-	"MRAWS_HEAT55_F",
-	"MRAWS_HEAT_F",
 	"rhs_weap_m72a7",
 	"rhs_weap_M136",
 	"rhs_weap_M136_hedp",

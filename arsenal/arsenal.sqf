@@ -144,6 +144,15 @@ case "Grenadier": {
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
+case "MAAWS": {
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 0, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
+		[_box, _beret + _uniforms + _vestsOperator + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _miscAce + [
+				"launch_MRAWS_green_F"
+			],false] call ace_arsenal_fnc_initBox; 
+};
+
 case "EOD": {
 		player setVariable ["Ace_medical_medicClass", 0];
 		player setVariable ["ACE_isEngineer", 2, true];
