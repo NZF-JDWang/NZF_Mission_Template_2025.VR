@@ -83,7 +83,7 @@ case "Breacher": {
 		player setVariable ["Ace_medical_medicClass", 0];
 		player setVariable ["ACE_isEngineer", 1, true];
 		player setUnitTrait ["explosiveSpecialist ", true];
-		[_box, _beret + _uniforms + _vestsOperator + _backpacksBreacher + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _launchers + _miscAce + [
+		[_box, _beret + _uniforms + _vestsOperator + _backpacksBreacher + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _launchers + _miscAce + [
 				"MineDetector",
 				"121_serbu_breacher",
 				"tsp_breach_block_mag",
