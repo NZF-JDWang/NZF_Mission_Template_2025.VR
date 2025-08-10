@@ -9,7 +9,7 @@ if (acex_field_rations_enabled) then {
 };
 //*************************************************************************************
 //Setup ACE Spectator
-[allPlayers, [player, missionNamespace getVariable ["nzf_gameMasters", []]]] call ace_spectator_fnc_updateUnits;
+[(allPlayers - (missionNamespace getVariable ["nzf_gameMasters", []])), []] call ace_spectator_fnc_updateUnits;
 [[1,2], [0]] call ace_spectator_fnc_updateCameraModes;
 [[-2,-1], [0,1,2,3,4,5,6,7]] call ace_spectator_fnc_updateVisionModes;
 //*************************************************************************************
