@@ -1,3 +1,28 @@
+/*
+ * Function: NZF_fnc_setBurkaTexture
+ * 
+ * Description:
+ *     Sets a random texture for units wearing the U_C_Burka_2_Woman uniform.
+ *     Removes headgear and goggles to ensure proper display of the burka texture.
+ *     Uses a slight delay to ensure the unit is fully initialized before applying changes.
+ *     Note: This function assumes the unit is already wearing the correct uniform.
+ * 
+ * Parameters:
+ *     0: Unit <OBJECT> - The unit to apply the burka texture to
+ * 
+ * Returns:
+ *     Nothing
+ * 
+ * Example:
+ *     [player] call NZF_fnc_setBurkaTexture;
+ * 
+ * Author: NZF Mission Template
+ * 
+ * Dependencies:
+ *     - CBA_fnc_waitAndExecute
+ *     - HSim mod (for texture paths)
+ */
+
 params ["_unit"];
 
 [{
@@ -11,10 +36,8 @@ params ["_unit"];
         "\HSim\Characters_H\Woman\Uniforms\data\tak_woman01_5_co.paa"
     ];
 
-    if (uniform _unit == "U_C_Burka_2_Woman") then {
-        private _selectedTexture = selectRandom _burkaTextures;
-        _unit setObjectTextureGlobal [0, _selectedTexture];
-        removeHeadgear _unit;
-        removeGoggles _unit;
-    };
+    private _selectedTexture = selectRandom _burkaTextures;
+    _unit setObjectTextureGlobal [0, _selectedTexture];
+    removeHeadgear _unit;
+    removeGoggles _unit;
 }, [_unit], 0.1] call CBA_fnc_waitAndExecute; 

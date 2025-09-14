@@ -1,16 +1,27 @@
 /*
- * Author: Mike
- * Switches ACRE spoken language on unconsciousness
- * Call from initPlayerLocal.sqf.
- *
- * Arguments:
- * None
- *
- * Return Value:
- * None
- *
+ * Function: NZF_fnc_unconscious
+ * 
+ * Description:
+ *     Manages ACRE radio language switching based on player unconsciousness state.
+ *     Switches between English and "Unconscious" language when player becomes unconscious.
+ *     Handles unit changes, death, and feature camera (Zeus) scenarios.
+ * 
+ * Parameters:
+ *     0: Player <OBJECT> - The player unit to set up unconscious language switching for
+ * 
+ * Returns:
+ *     Nothing
+ * 
  * Example:
- * [player] call PatrolOps_fnc_unconcious;
+ *     [player] call NZF_fnc_unconscious;
+ * 
+ * Author: NZF Mission Template (Based on work by Mike)
+ * 
+ * Dependencies:
+ *     - ACRE2 mod
+ *     - CBA_fnc_addEventHandler
+ *     - CBA_fnc_addPlayerEventHandler
+ *     - ace_unconscious event
  */
 
 params ["_player"];

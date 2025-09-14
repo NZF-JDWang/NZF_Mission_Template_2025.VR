@@ -1,3 +1,31 @@
+/*
+ * Function: NZF_fnc_intro
+ * 
+ * Description:
+ *     Creates a cinematic mission introduction sequence with author, mission name, quote,
+ *     and location information. Includes music, text effects, and visual transitions.
+ *     Manages HUD elements and player simulation during the intro sequence.
+ * 
+ * Parameters:
+ *     None
+ * 
+ * Returns:
+ *     Nothing
+ * 
+ * Example:
+ *     [] call NZF_fnc_intro;
+ * 
+ * Author: NZF Mission Template
+ * 
+ * Dependencies:
+ *     - missionSetup.hpp
+ *     - quotes.hpp
+ *     - CBA_fnc_waitAndExecute
+ *     - ace_common_fnc_displayTextStructured
+ *     - BIS_fnc_cinemaBorder
+ *     - NZF_fnc_introText
+ */
+
 #include "..\missionSetup.hpp"
 #include "..\quotes.hpp"
 

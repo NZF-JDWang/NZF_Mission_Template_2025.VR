@@ -56,6 +56,7 @@ case "CCT": {
 				"ACRE_PRC117F",
 				"ACRE_PRC152",
 				"ItemcTab",
+				"Worm_IZLIDB",
 				"Laserdesignator",
 				"ACE_Vector"
 			],false] call ace_arsenal_fnc_initBox; 
