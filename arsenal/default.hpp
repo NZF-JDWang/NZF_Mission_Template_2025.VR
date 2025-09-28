@@ -21851,7 +21851,8 @@ _throwablesExplosives = [
 	"rhsusf_m112_mag",
 	"rhsusf_m112x4_mag",
 	"tsp_flashbang_cts",
-	"tsp_flashbang_m84"
+	"tsp_flashbang_m84",
+	"rhs_mag_an_m14_th3"
 ];
 _pistols = [
 	"crow_x26_blk_yellow",
