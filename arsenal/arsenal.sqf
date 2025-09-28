@@ -106,8 +106,22 @@ case "MachineGunner": {
 		player setVariable ["Ace_medical_medicClass", 0];
 		player setVariable ["ACE_isEngineer", 0, true];
 		player setUnitTrait ["explosiveSpecialist ", false];
-		[_box, _beret + _uniforms + _vestsMachineGunner + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _machineGuns + _optics + _attachments + _miscAce + [
-				
+		[_box, _beret + _uniforms + _vestsMachineGunner + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _machineGuns + _opticsMG + _miscAce + [
+				"Tier1_SAW_Bipod_2",
+				"Tier1_SAW_Bipod_2_Desert",
+				"Tier1_SAW_Bipod",
+				"Tier1_SAW_Bipod_Desert",
+				"Tier1_Mk46Mod0_LA5",
+				"Tier1_Mk46Mod0_LA5_M600V_Black",
+				"Tier1_Mk46Mod0_LA5_M600V_Black_FL",
+				"Tier1_Mk46Mod0_LA5_M600V",
+				"Tier1_Mk46Mod0_LA5_M600V_FL",
+				"Tier1_Mk46Mod0_LA5_M603V",
+				"Tier1_Mk46Mod0_LA5_M603V_FL",
+				"Tier1_M300C_Black",
+				"Tier1_M300C",
+				"Tier1_M600V_Black",
+				"Tier1_M600V"
 			],false] call ace_arsenal_fnc_initBox; 
 };
 

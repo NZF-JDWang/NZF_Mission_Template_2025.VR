@@ -87,7 +87,7 @@ _unit addEventHandler ["Respawn", {
 //*************************************************************************************
 //Add arsenal self interaction to players when they are inside the arsenal trigger
 _condition = {
-    _player inArea triggerArsenal;
+	(_player inArea triggerArsenal) && (missionNamespace getVariable ["nzf_arsenalOn", false]);
 };
 _statement = {
     triggerArsenal execVM "arsenal\arsenal.sqf";
@@ -121,5 +121,24 @@ if (nzf_template_trackerOn) then {
     _action2 = ["CloseTracker","Close Tracker","",_statement2,_conditionAlreadyOpen] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;
 
+};
+//*************************************************************************************
+// Zeus Action: Toggle Arsenal (ACE Zeus interaction)
+if (player in (missionNamespace getVariable ["nzf_gameMasters", []])) then {
+	private _toggleStatement = {
+		// Toggle and broadcast new state from the Zeus client to everyone
+		private _newState = !(missionNamespace getVariable ["nzf_arsenalOn", false]);
+		missionNamespace setVariable ["nzf_arsenalOn", _newState, true];
+		["ace_common_displayTextStructured", [format ["The Arsenal is now %1", if (_newState) then {"OPEN"} else {"CLOSED"}], 1.5]] call CBA_fnc_globalEvent;
+	};
+	private _condition = {true};
+	private _action = [
+		"NZF_ToggleArsenal",
+		"Toggle Arsenal",
+		"",
+		_toggleStatement,
+		_condition
+	] call ace_interact_menu_fnc_createAction;
+	[["ACE_ZeusActions"], _action] call ace_interact_menu_fnc_addActionToZeus;
 };
 

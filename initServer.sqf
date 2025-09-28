@@ -2,6 +2,8 @@ if (nzf_template_Groups) then {
 	//Initialize player groups (U - menu) now a CBA setting
 	["Initialize", [true]] call BIS_fnc_dynamicGroups;
 };
+// Initialize NZF arsenal toggle (public, with default OFF)
+missionNamespace setVariable ["nzf_arsenalOn", false, true];
 
 // Set the stretchers to be carryable
 call NZF_fnc_initStretchers;
