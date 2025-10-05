@@ -46,8 +46,6 @@ if (vehicleVarName player isEqualTo "TESTGUY") then {} else
 };
 if (getPlayerUID player in nzf_template_PJs) then {removeHeadgear player; player addHeadgear "nzf_beret_PJ"};
 //*************************************************************************************
-//Make players less visible to the AI 
-[] spawn NZF_fnc_camo;
 // Setup INCON Undercover (it's ok to leave this even if you're not using the undercover scripts)
 if (player getVariable ["isSneaky",false]) then {
     [player] execVM "INC_undercover\Scripts\initUCR.sqf";
@@ -90,14 +88,14 @@ _condition = {
 	(_player inArea triggerArsenal) && (missionNamespace getVariable ["nzf_arsenalOn", false]);
 };
 _statement = {
-    triggerArsenal execVM "arsenal\arsenal.sqf";
-     [1, [], {[triggerArsenal,player,false] call ace_arsenal_fnc_openBox;}, {}, "Opening Arsenal"] call ace_common_fnc_progressBar;
+    [triggerArsenal] call NZF_fnc_initArsenal;
+    [1, [], {[triggerArsenal,player,false] call ace_arsenal_fnc_openBox;}, {}, "Opening Arsenal"] call ace_common_fnc_progressBar;
 };
 _action = ["Open Arsenal","Open Arsenal","\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\armor_ca.paa",_statement,_condition] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 
 ["ace_arsenal_displayClosed",{[triggerArsenal, false] call ace_arsenal_fnc_removeBox}] call CBA_fnc_addEventHandler;
-triggerArsenal execVM "arsenal\arsenal.sqf";
+[triggerArsenal] call NZF_fnc_initArsenal;
 //*************************************************************************************
 // GPS Tracking - Set in CBA settings
 if (nzf_template_trackerOn) then {
