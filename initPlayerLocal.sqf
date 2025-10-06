@@ -18,33 +18,35 @@ if ((player getvariable "role" isEqualTo "PJ") AND (getPlayerUID player in nzf_t
 //Only allow PJ's to access blood crates
 Fn_IsRestrictedBoxForPlayerAccess = { 
 	params ["_unit", "_box"]; 
-    !(player getvariable "role" == "PJ") && typeOf _box == "nzf_NZBloodbox";
+    !(player getvariable "role" == "PJ") && typeOf _box == "nzf_bloodbox";
     };
 
 player addEventHandler ["InventoryOpened", Fn_IsRestrictedBoxForPlayerAccess];
 //*************************************************************************************
 //Load default gear
-if (player in (missionNamespace getVariable ["nzf_gameMasters", []])) then {
-    // Player is a Game Master; do nothing
-} else {
+if !(player in (missionNamespace getVariable ["nzf_gameMasters", []])) then {
     // Player is not a Game Master; apply uniform and remove goggles
     player forceAddUniform selectRandom (parseSimpleArray nzf_template_defaultUniform);
     removeGoggles player;
 };
 
 [player, ""] call BIS_fnc_setUnitInsignia;
+
 //Now check if they're in the Unit and if so give them a NZF beret
-if (vehicleVarName player isEqualTo "TESTGUY") then {} else 
-{
+if (vehicleVarName player != "TESTGUY") then {
     removeHeadgear player;
-    if (squadParams player select 0 select 0 == "NZF") then 
-        {
-             if (getPlayerUID player in nzf_template_PJs ) then {player addHeadgear "nzf_beret_PJ"} else {player addHeadgear "nzf_beret_black_silver"};
-            
-        } else {player addHeadgear ""};
     
+    // Check if player is a PJ first (takes priority)
+    if (getPlayerUID player in nzf_template_PJs) then {
+        player addHeadgear "nzf_beret_PJ";
+    } else {
+        // Then check if they're in NZF squad
+        if (squadParams player select 0 select 0 == "NZF") then {
+            player addHeadgear "nzf_beret_black_silver";
+        };
+    };
 };
-if (getPlayerUID player in nzf_template_PJs) then {removeHeadgear player; player addHeadgear "nzf_beret_PJ"};
+
 //*************************************************************************************
 // Setup INCON Undercover (it's ok to leave this even if you're not using the undercover scripts)
 if (player getVariable ["isSneaky",false]) then {
