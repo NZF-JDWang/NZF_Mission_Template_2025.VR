@@ -21766,8 +21766,15 @@ _PJs = [
 	"fsg_ItemMedicBag",
 	"ACE_morphine",
 	"ACE_epinephrine",
-	"ACE_bodyBag"
+	"ACE_bodyBag",
+	"ACE_salineIV",
+	"ACE_salineIV_250",
+	"ACE_salineIV_500",
+	"ACE_plasmaIV_250",
+	"ACE_plasmaIV_500",
+	"ACE_plasmaIV"
 	];
+
 _ammo = [
 	"X26_Cartridge_Yellow",
 	"121_2Rnd_Slug",

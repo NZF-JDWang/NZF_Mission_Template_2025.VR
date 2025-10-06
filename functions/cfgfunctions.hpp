@@ -4,7 +4,6 @@ class NZF
 	class NZF
 	{
 		file = "functions";
-		class camo {};
 		class unconscious {};
 		class manageGMNeeds {};
 		class intro {};
